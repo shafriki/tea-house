@@ -148,3 +148,34 @@ body {
     margin-top: 0;
 }
 
+.item:hover {
+    background-color: crimson;
+    transition: 0.4s;
+}
+* {
+    border: 1px solid red;
+}
+/* tea section */
+.img-section {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    margin-right: 0px;
+    gap: 10px 10px; 
+    grid-template-areas: 
+      "div1 div2 . ."
+      "div3 div4 . ."
+      ". . . ."; 
+  }
+  .div1 { grid-area: div1; }
+  .div2 { grid-area: div2; }
+  .div3 { grid-area: div3; }
+  .div4 { grid-area: div4; }
+
+.tea-container {
+    display: flex;
+    justify-content: center;
+}
+.tea-description {
+    width: 582px;
+}
