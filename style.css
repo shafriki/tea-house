@@ -152,30 +152,74 @@ body {
     background-color: crimson;
     transition: 0.4s;
 }
-* {
-    border: 1px solid red;
-}
-/* tea section */
-.img-section {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    margin-right: 0px;
-    gap: 10px 10px; 
-    grid-template-areas: 
-      "div1 div2 . ."
-      "div3 div4 . ."
-      ". . . ."; 
-  }
-  .div1 { grid-area: div1; }
-  .div2 { grid-area: div2; }
-  .div3 { grid-area: div3; }
-  .div4 { grid-area: div4; }
 
+/* tea section */
 .tea-container {
     display: flex;
     justify-content: center;
+    gap: 52px;
+}
+.img-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
 }
 .tea-description {
     width: 582px;
+    color: rgb(119, 119, 119);
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+    margin: 0px 0px 30px 0px;
+}
+.tea-title {
+    width: 413px;
+    color: rgb(28, 28, 28);
+    font-family: Manrope;
+    font-size: 45px;
+    font-weight: 800;
+    margin: 0px 0px 34px 0px;
+}
+.sub-title {
+    color: rgb(28, 28, 28);
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0px 0px 14px 0px;
+}
+.ones {
+    width: 238px;
+    height: 136px;
+    border-radius: 10px;
+    background: linear-gradient(270.00deg, rgb(255, 0, 0) 0%,rgb(255, 137, 56) 100%);
+    opacity: 0.1;
+    border: 1px solid green;
+}
+.three {
+    width: 238px;
+    height: 355.28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -215px;
+    border-radius: 10px;
+    background: rgba(87, 118, 57, 0.1);
+}
+.four {
+    width: 238px;
+    height: 136px;
+    border-radius: 10px;
+    background: linear-gradient(90.00deg, rgb(217, 217, 217),rgba(255, 255, 255, 0) 100%);    
+}
+.two {
+    width: 238px;
+    height: 355.28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(230, 166, 35, 0.1);
 }
